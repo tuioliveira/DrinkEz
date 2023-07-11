@@ -1,4 +1,4 @@
-package br.comfiap.primeiroaplicativo.ui.theme
+package br.com.drinkez.ui.theme
 
 import android.app.Activity
 import android.os.Build

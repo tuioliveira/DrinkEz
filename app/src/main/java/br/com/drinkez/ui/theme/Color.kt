@@ -1,4 +1,4 @@
-package br.comfiap.primeiroaplicativo.ui.theme
+package br.com.drinkez.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

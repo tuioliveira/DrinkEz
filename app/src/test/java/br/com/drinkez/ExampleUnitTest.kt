@@ -1,4 +1,4 @@
-package br.comfiap.primeiroaplicativo
+package br.com.drinkez
 
 import org.junit.Test
 

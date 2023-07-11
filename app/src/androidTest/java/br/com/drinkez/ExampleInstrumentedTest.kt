@@ -1,4 +1,4 @@
-package br.comfiap.primeiroaplicativo
+package br.com.drinkez
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
