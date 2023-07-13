@@ -1,24 +1,24 @@
 package br.com.drinkez.beggin
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.Toast
-import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AppCompatActivity
 import br.comfiap.primeiroaplicativo.databinding.ActivityBegginBinding
 
-class BegginActivity : ComponentActivity() {
+class BegginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityBegginBinding
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
-        // Iniciando o view binding
-        binding = ActivityBegginBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
         init()
     }
 
     private fun init() {
+        // Iniciando o view binding
+        binding = ActivityBegginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
         binding.glass.setOnClickListener {
             Toast.makeText(
                 this,
@@ -26,6 +26,5 @@ class BegginActivity : ComponentActivity() {
                 Toast.LENGTH_SHORT,
             ).show()
         }
-
     }
 }
