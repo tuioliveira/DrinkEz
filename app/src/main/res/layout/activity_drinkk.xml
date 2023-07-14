@@ -13,27 +13,27 @@
             android:id="@+id/caipirinha"
             android:layout_width="120dp"
             android:layout_height="115dp"
-            android:layout_marginTop="100dp"
             android:layout_marginStart="50dp"
+            android:layout_marginTop="100dp"
             android:text="@string/caipirinhas"
-            android:textSize="30sp" />
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/a"
             android:layout_width="120dp"
             android:layout_height="115dp"
-            android:layout_marginTop="100dp"
             android:layout_marginStart="50dp"
+            android:layout_marginTop="100dp"
             android:text="xxxx"
-            android:textSize="30sp" />
+            android:textSize="10sp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
         android:orientation="horizontal">
 
         <Button
@@ -41,26 +41,44 @@
             android:layout_width="120dp"
             android:layout_height="115dp"
             android:text="@string/shots"
-            android:textSize="30sp" />
+            android:textSize="11sp" />
 
         <Button
             android:id="@+id/b"
             android:layout_width="120dp"
             android:layout_height="115dp"
             android:layout_marginStart="50dp"
-            android:text="b"
-            android:textSize="30sp" />
+            android:text="@string/b"
+            android:textSize="11sp" />
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/famous"
-        android:layout_width="120dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="100dp"
-        android:text="@string/populares"
-        android:textSize="30sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/famous"
+            android:layout_width="120dp"
+            android:layout_height="115dp"
+            android:text="@string/populares"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="100dp"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/c"
+            android:layout_width="120dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="50dp"
+            android:text="@string/c"
+            android:layout_marginTop="100dp"
+            android:textSize="11sp" />
+
+
+
+
+    </LinearLayout>
 
 </LinearLayout>
