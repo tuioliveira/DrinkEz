@@ -23,7 +23,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="br.com.drinkez.drinkk.DrinkkActivity"
+        <activity
+            android:name="br.com.drinkez.drinkk.DrinkkActivity"
+            android:exported="true" />
+        <activity
+            android:name="br.com.drinkez.caipirinhas.CaipirinhasActivity"
             android:exported="true" />
     </application>
 

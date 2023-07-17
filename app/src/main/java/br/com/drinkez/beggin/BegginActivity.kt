@@ -1,8 +1,10 @@
 package br.com.drinkez.beggin
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import br.com.drinkez.drinkk.DrinkkActivity
 import br.comfiap.primeiroaplicativo.databinding.ActivityBegginBinding
 
 class BegginActivity : AppCompatActivity() {
@@ -20,11 +22,8 @@ class BegginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.glass.setOnClickListener {
-            Toast.makeText(
-                this,
-                "glass",
-                Toast.LENGTH_SHORT,
-            ).show()
+            val intent = Intent(this, DrinkkActivity::class.java)
+            startActivity(intent)
         }
     }
 }

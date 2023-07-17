@@ -1,9 +1,11 @@
 package br.com.drinkez.drinkk
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import br.com.drinkez.caipirinhas.CaipirinhasActivity
 import br.comfiap.primeiroaplicativo.databinding.ActivityBegginBinding
 import br.comfiap.primeiroaplicativo.databinding.ActivityDrinkkBinding
 
@@ -23,11 +25,8 @@ class DrinkkActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.caipirinha.setOnClickListener {
-            Toast.makeText(
-                this,
-                "caipirinhas",
-                Toast.LENGTH_SHORT,
-            ).show()
+            val intent = Intent(this, CaipirinhasActivity::class.java)
+            startActivity(intent)
         }
         binding.shots.setOnClickListener {
             Toast.makeText(
