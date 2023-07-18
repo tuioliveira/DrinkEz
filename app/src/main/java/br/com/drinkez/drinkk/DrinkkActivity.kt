@@ -6,6 +6,7 @@ import android.os.PersistableBundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import br.com.drinkez.caipirinhas.CaipirinhasActivity
+import br.com.drinkez.shots.ShotsActivity
 import br.comfiap.primeiroaplicativo.databinding.ActivityBegginBinding
 import br.comfiap.primeiroaplicativo.databinding.ActivityDrinkkBinding
 
@@ -29,11 +30,8 @@ class DrinkkActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.shots.setOnClickListener {
-            Toast.makeText(
-                this,
-                "shots",
-                Toast.LENGTH_SHORT,
-            ).show()
+            val intent = Intent(this, ShotsActivity::class.java)
+            startActivity(intent)
         }
         binding.famous.setOnClickListener {
             Toast.makeText(

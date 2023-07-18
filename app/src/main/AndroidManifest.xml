@@ -29,6 +29,9 @@
         <activity
             android:name="br.com.drinkez.caipirinhas.CaipirinhasActivity"
             android:exported="true" />
+        <activity
+            android:name="br.com.drinkez.shots.ShotsActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
