@@ -1,6 +1,7 @@
 package br.com.drinkez.beggin
 
 import android.content.Intent
+import android.graphics.Typeface
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -25,5 +26,7 @@ class BegginActivity : AppCompatActivity() {
             val intent = Intent(this, DrinkkActivity::class.java)
             startActivity(intent)
         }
+        val nickainleyFont = Typeface.createFromAsset(assets, "Nickainley-Normal.otf")
+        binding.logotype.typeface = nickainleyFont
     }
 }
